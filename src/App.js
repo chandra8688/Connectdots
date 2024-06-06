@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React, { useState } from 'react';
+import Board from './components/Board';
+import './App.css'; 
 
-function App() {
+const App = () => {
+  const [size] = React.useState(5);
+  const [lines, setLines] = React.useState([]);
+  const [squares, setSquares] = React.useState([]);
+  const [currentPlayer, setCurrentPlayer] = React.useState('Player 1');
+  const [scores, setScores] = React.useState({ 'Player 1': 0, 'Player 2': 0 });
+
+  // Add more game logic here
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Board size={size} />
+      <div className="status">
+        {/* Display game status and scores */}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
