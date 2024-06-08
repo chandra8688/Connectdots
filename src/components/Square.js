@@ -1,4 +1,3 @@
-// src/components/Square.js
 import React from 'react';
 
 const Square = ({ x, y, owner }) => (

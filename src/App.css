@@ -1,31 +1,31 @@
 /* src/App.css */
 .board {
-    position: relative;
-    width: 100px;
-    height: 100px;
-  }
-  
-  .dot {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background-color: black;
-    border-radius: 50%;
-  }
-  
-  .line {
-    position: absolute;
-    background-color: black;
-  }
-  
-  .square {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: rgba(0, 0, 255, 0.3);
-  }
-  
-  .status {
-    margin-top: 20px;
-  }
-  
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.dot {
+  position: absolute;
+  width: 10px;  /* Increased size for easier clicking */
+  height: 10px; /* Increased size for easier clicking */
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer; /* Indicate that dots are clickable */
+}
+
+.line {
+  position: absolute;
+  background-color: black;
+}
+
+.square {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(0, 0, 255, 0.3);
+}
+
+.status {
+  margin-top: 20px;
+}

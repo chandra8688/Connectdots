@@ -1,4 +1,3 @@
-// src/components/Line.js
 import React from 'react';
 
 const Line = ({ from, to, direction }) => (
